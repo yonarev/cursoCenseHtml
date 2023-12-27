@@ -1,0 +1,817 @@
+mcv-janvera@sac.tie.cl
+jorge.vera@movistar.cl
+jverav@cgsinc.cl
+SABADO 16/DIC
+    MÓDULO 1. PRINCIPIOS, ACCESIBILIDAD Y USABILIDAD DE PÁGINAS WEB.
+        Conceptos generales de diseño
+        
+        Algunos consejos de cómo enfocar el desarrollo de una página web son los siguientes:
+            Compatibilidad
+                soporte en navegadores
+                alternativas en dispositivos 
+                reutilizacion de elementos
+                    y evolucion progresiva
+            Utilidad
+                resolucion de problemas reales 
+                prioridad de los usuarios 
+                separacion de responsabilidades
+                consistencia del dom
+
+            Interoperabilidad
+                definicion del funcionamiento 
+                evitar complejidad 
+                control de errores
+                    notificacion elegante de errores
+                    contenido facil de interpretar sn detalles tecnicos
+            Acceso universal
+                independencia del medio 
+                    en todos los dispositivos
+                apoyo a dif idiomas 
+                    considerar a que grupo va destinado    
+                accesibilidad 
+                    considerar discapacidad
+            Accesibilidad y usabilidad en páginas web
+                Accesibilidad y usabilidad son dos conceptos que, 
+                    en ocasiones se confunden o se mezclan entre sí. 
+                    A pesar de que pueden parecer que ambas cosas van dirigidas en el mismo sentido 
+                    (métodos y técnicas para diseñar correctamente nuestra página web), 
+                    en muchos casos entran en conflicto.
+
+                    Pautas para promover la accesibilidad en páginas web
+                    Existen pautas que permiten hacer accesibles los contenidos de la web a personas con discapacidad.              
+                    El fin principal de estas pautas en promover la accesibilidad.
+                    Las pautas aplicables son las siguientes:
+
+                        Acceso de todos los usuarios en condiciones de igualdad a los contenidos.
+                        Textos alternativos en imágenes.
+                        Vídeos con subtítulos para usuarios con dificultades auditivas.
+                        Selección de colores para personas con daltonismo.
+                        Tamaño del texto suficientemente grande para que usuarios con problemas visuales puedan leerlo sin dificultad.
+                        Tamaño de los botones o las áreas activas adecuado puede facilitar su uso a los usuarios que no pueden controlar 
+                            el ratón con precisión.
+                        Permitir uso de teclado y ratón: 
+                            para evitar acciones que dependan de un dispositivo concreto 
+                            y el usuario pueda escoger el dispositivo que más le convenga.
+                Usabilidad de páginas web
+                    Son técnicas que ayudan a los seres humanos a realizar tareas 
+                    en entornos gráficos de ordenador.
+                    Deben tenerse en cuenta una serie de principios importantes para la usabilidad. 
+                VER PPT
+                ---------------
+
+            PRUEBA 1
+                    1. Señala si la siguiente afirmación es verdadera o falsa: "Debemos desarrollar un sitio web incluyendo la información de presentación (como queremos que se vea la página) en el propio documento":
+                    Verdadero: de esta forma aceleramos la carga de la página al contener todo en un único fichero
+                    Verdadero: debemos hacerlo en la medida de lo posible puesto que se considera buena práctica
+                    Falso: el contenido debe ir separado de la presentación puesto que así lo exige el modelo en 3 niveles
+                si-> Falso: es mejor separarlo puesto que independiza el contenido de la presentación lo que supone muchas ventajas
+
+                    2. ¿Cómo debe presentarse una web?
+                    Con un manual de usuario para que pueda consultar las diferentes funcionalidades.
+                    Sorprendiendo al usuario en la medida de lo posible.
+                    Con fuentes y fondo de tonos muy similares para ser agradable y no resultar llamativo.
+                si-> Con los elementos de la página donde el usuario los espera.
+
+                    3. Indica cual de los siguientes no es un principio a seguir en el diseño de una página Web:
+                si-> Simplicidad
+                    Compatibilidad
+                    Utilidad
+                    Acceso universal
+
+                    4. En caso de conflicto de intereses en alguna funcionalidad de programación, ¿a quién debe darse prioridad para su resolución?
+                    A los desarrolladores de navegadores
+                si-> A los usuarios
+                x A los autores de contenido
+                    A los redactores de especificaciones
+
+                    5. Con respecto al criterio de usabilidad, podemos afirmar que las aplicaciones deben ser acordes a lo que el usuario espera de ellas. Esta consideración recibe el nombre de:
+                    Anticipación
+                si-> Consistencia
+                    Autonomía
+                    Reversibilidad
+        
+        Para trabajar con HTML5 vamos a usar el entorno Eclipse. 
+        Se trata de un entorno de desarrollo multiplataforma 
+            y permite desarrollar en múltiples lenguajes tanto de
+                programación 
+                como de marcado, 
+                uso de UML, etc.
+            Herramientas para trabajar con HTML5
+                Eclipse es un entorno de desarrollo multiplataforma 
+                    y permite desarrollar en múltiples lenguajes tanto de 
+                        programación 
+                        como de marcado, uso de UML, etc.
+                        Eclipse es, en el fondo, únicamente un armazón (workbench) sobre el que se pueden montar herramientas de desarrollo para cualquier lenguaje, mediante la implementación de los plugins adecuados.
+
+                    La arquitectura de plugins de Eclipse permite:
+                        Integrar diversos lenguajes sobre un mismo IDE.
+                        Introducir otras aplicaciones accesorias que pueden resultar útiles durante el proceso de desarrollo como: 
+                            herramientas UML,
+                            editores visuales de interfaces, 
+                            ayuda en línea para librerías, etc.
+                    El IDE Eclipse es, únicamente, una de las herramientas que se engloban bajo 
+                        el denominado Proyecto Eclipse. 
+                        El Proyecto Eclipse aúna tanto el desarrollo del IDE Eclipse 
+                        como de algunos de los plugins más importantes 
+                            (como el JDT, plugin para el lenguaje Java, o el CDT, plugin para el lenguaje C/C++).
+
+                    En concreto, permite:
+                        Crear páginas HTML 5 con una nueva plantilla.
+                        Proporciona autocompletado de código para los elementos de HTML5.
+                        Ofrece un editor de propiedades para los atributos de HTML5.
+                        Ofrece un editor WYSIWYG para el desarrollo visual de páginas HTML5.
+                        
+                        En el documento descargable disponible al final del módulo, puedes 
+                            conocer con detalle el proceso de creación de una página en HTML con Eclipse 
+                            y las herramientas de edición de las que dispone.
+                    aplicacion en linea
+                        plugin de chrome
+                        https://chromewebstore.google.com/detail/emnjgfpochdhhgimnoadiiinampoihkk?hl=es-419        
+
+SABADO 23/DIC DOMINGO 12 DIC  
+    MÓDULO 2. INTRODUCCIÓN A HTML Y CSS
+        Introducción a HTML
+        ¿Qué es HTML?
+            Languaje)  y se traduce literalmente como “Lenguaje de marcado de hipertexto”.
+            En el siguiente vídeo, conocerás algunos aspectos introductorios a este lenguaje.
+
+        Marcado HTML
+            El marcado HTML se realiza mediante etiquetas de apertura y cierre. 
+            Todo lo que se encuentra dentro de una etiqueta de apertura y cierre se encuentra afectado por ella, 
+            incluyendo texto plano y cualquier otra etiqueta que pueda contener.
+            ETIQUETA DE APERTURA
+                Una etiqueta de apertura se define con un nombre de etiqueta 
+                    encerrado entre los corchetes angulares < y > (signo “menor que” y signo “mayor que”)
+                    EJEM 
+                        <body>
+            ETIQUETA DE CIERRE           
+                Una etiqueta de cierre se define con el corchete angular de apertura “<” 
+                    seguido del carácter barra /, el nombre de etiqueta y finalmente el corchete angular de cierre.     
+                    EJEM 
+                        </body>
+            ETIQURETA CON CONTENIDO  
+                Una etiqueta con contenido 
+                    Entre la etiqueta de apertura y la de cierre, se encuentra el contenido. 
+                        El contenido puede ser 
+                            texto 
+                            u otras etiquetas.
+                            Una etiqueta con contenido tiene el siguiente formato:
+                    EJEM
+                        <body>contenido</body>
+
+            Si entre la etiqueta de apertura y la de cierre 
+                no se añade ningún contenido, se puede declarar con un corchete angular de apertura “<” 
+                seguido del nombre de la etiqueta, una barra / y finalmente el corchete angular de cierre.        
+
+                EJEM 
+                    </br>
+            ATRIBUTOS
+                Los atributos añaden información adicional a una etiqueta. 
+                    Cada etiqueta admite una serie de atributos. 
+                    Se añaden únicamente a las etiquetas de apertura, 
+                    justo después del nombre. 
+                    Se admite más de un atributo por etiqueta. 
+                    Siguen el esquema clave / valor de la siguiente forma: 
+                        clave: “valor”.        
+                        <img src="/logo.gif"></img>
+
+            1. Herramientas para trabajar con HTML5
+                Para trabajar con HTML5 vamos a usar el entorno Eclipse. 
+                Se trata de un entorno de desarrollo multiplataforma 
+                y permite desarrollar en múltiples lenguajes tanto de programación 
+                como de marcado, uso de UML, etc.  
+                El IDE eclipse es de libre distribución y puede
+                descargarse desde su web oficial (www.
+                eclipse.org), más concretamente la versión
+                para desarrolladores J2EE. Esta versión
+                contiene una serie de plugins preinstalados
+                para desarrollo de aplicaciones web con
+                Java. Aunque el lenguaje Java se encuentra
+                fuera del ámbito de este curso, esta versión
+                también contiene el editor para HTML5,
+                que es la funcionalidad que vamos a usar.
+                En la web oficial de Eclipse, se define
+                como “An IDE for everything and nothing
+                in particular” (un IDE para todo y para
+                nada en particular). Eclipse es, en el fondo,
+                únicamente un armazón (workbench) sobre
+                el que se pueden montar herramientas
+                de desarrollo para cualquier lenguaje,
+                mediante la implementación de los plugins
+                adecuados. La arquitectura de plugins
+                de Eclipse permite, además de integrar
+                diversos lenguajes sobre un mismo IDE,
+                introducir otras aplicaciones accesorias
+                que pueden resultar útiles durante el
+                proceso de desarrollo como: herramientas
+                UML, editores visuales de interfaces,
+                ayuda en línea para librerías, etc.
+                El IDE Eclipse es, únicamente, una de las
+                herramientas que se engloban bajo el
+                denominado Proyecto Eclipse. El Proyecto
+                Eclipse aúna tanto el desarrollo del IDE
+                Eclipse como de algunos de los plugins
+                mas importantes (como el JDT, plugin para
+                el lenguaje Java, o el CDT, plugin para el
+                lenguaje C/C++).     
+
+                Este proyecto también alcanza a las librerías que sirven como base
+                para la construcción del IDE Eclipse (pero pueden ser utilizadas
+                de forma completamente independiente), como por ejemplo, la
+                librería de widgets SWT.
+                A partir de la versión Helios del IDE de Eclipse y superiores (con
+                los plugins para desarrolladores de Java EE) proporciona soporte
+                para el desarrollo de HTML5. Las versiones anteriores también
+                tienen un editor de HTML, pero no admite HTML 5.
+                En concreto, permite:
+                    • Crear paginas HTML 5 con una nueva plantilla.
+                    • Proporciona autocompletado de código para los elementos de HTML5.
+                    • Ofrece un editor de propiedades para los atributos de HTML5.
+                    • Ofrece un editor WYSIWYG para el desarrollo visual de páginas HTML5.                  
+            1.1 | Creación de una página en HTML5 con Eclipse     
+                    Crear un documento HTML 5 es fácil. Simplemente hay que seguir
+                    estos pasos:
+                    • Seleccione File → New → Other.
+                    • Expandir Web y seleccione un archivo HTML. Haga clic en Next.
+                    • Escriba un nombre de archivo, seleccione la carpeta principal y
+                        haga click en next.   
+                    • Seleccione nuevo archivo HTML5 para la plantilla y hacer click en
+                        finish para terminar.
+                    El archivo se abrirá con el editor de HTML, que proporciona
+                    resaltado de sintaxis (añade diferentes colores y tipos de letra en
+                    función del elemento que se muestra). 
+                        Las etiquetas se muestran en verde, 
+                        los atributos de color morado, 
+                        los valores de los atributos de color azul, 
+                        y los valores de los elementos en negro.
+                    Hay que tener en cuenta que el documento contiene el elemento
+                    DOCTYPE nuevo que se utiliza. También contiene el elemento
+                    meta simplificado que se utiliza para especificar la codificación de
+                    caracteres UTF-8.
+            1.2 | Herramientas de edición: Eclipse
+                Vamos a ver algunas de las herramientas que el plugin nos proporciona:
+                    • Es el resultado de la sintaxis. Las palabras reservadas y signos
+                        correspondientes al estándar aparecen resaltados en color. El
+                        resto del texto en negro.
+                    • Autocompletado de etiquetas. Basta con pulsar ctrl + espacio y
+                        una lista de elementos HTML5 validos aparecerán listados. Si ya
+                        hemos escrito parte de la etiqueta, nos lo autocompletara si sólo
+                        hay una etiqueta que empieza por el texto escrito. Si hay más
+                        de una, aparecerá un listado únicamente con las coincidencias.
+                        Sólo nos mostrarán las etiquetas permitidas en el lugar en el que
+                        estamos editando.        
+                    • Autocompletado de atributos. Funciona exactamente igual que
+                        con las etiquetas, solo que debemos estar editando dentro de la
+                        declaración de una etiqueta.    
+            1.3 | Introducción a HTML
+                HTML (HiperText Markup Languaje). Su nombre se traduce literalmente como 
+                “Lenguaje de marcado de hipertexto”.
+                Se encuentra enmarcado en los llamados lenguajes de marcado. Los
+                lenguajes de marcado son los utilizados para generar documentos
+                en los que, junto con el texto que constituye el contenido, se incluyen
+                etiquetas o marcas que contienen información adicional sobre la
+                estructura del contenido.
+                En el caso de HTML, se trata concretamente de un lenguaje de
+                marcado de presentación, en el que las etiquetas que acompañan
+                al texto indican al navegador información de cómo se encuentra
+                organizado.
+                Es un estándar desarrollado y regulado por la W3C, que es un
+                organismo dedicado a la estandarización de las tecnologías
+                utilizadas en la Web.
+                Una de las características principales del lenguaje es que las páginas
+                generadas con HTML son de hipertexto. Esto quiere decir que una
+                página no contiene un texto aislado, sino que están o pueden estar
+                enlazadas a otras páginas y ser referenciadas desde otras páginas
+                mediante enlaces o links. Esto nos permite navegar por ellas.  
+
+                Es independiente de la plataforma ya que HTML solo genera
+                documentos de texto y admite cualquier codificación de caracteres.
+                El proceso de alterar la información de una página es relativamente
+                sencillo y ágil ya que es un lenguaje de fácil comprensión.
+                Basa su contenido en referenciacion. Si en una página HTML,
+                queremos introducir algún elemento como una imagen, script,
+                video, u otra página HTML (por ejemplo), no se incluye su contenido
+                directamente en ella si no que se referencia (se indica donde está el
+                contenido que queremos incluir). El navegador es el encargado de
+                interpretar las referencias y cargarlas componiendo la visualización
+                final.
+                Al ser un estándar, uno de sus objetivos es la compatibilidad hacia
+                atrás (o retro-compatibilidad). Un navegador que es capaz de
+                interpretar una versión de HTML, debe ser capaz de interpretar
+                páginas escritas en cualquiera de sus versiones anteriores.          
+            1.4 | Marcado HTML
+                El marcado HTML se realiza mediante etiquetas de apertura y cierre. 
+                Todo lo que se encuentra dentro de una etiqueta de apertura y cierre 
+                se encuentra afectado por ella, incluyendo texto plano y cualquier
+                otra etiqueta que pueda contener.  
+                    Una etiqueta de apertura 
+                        se define con un nombre de etiqueta
+                        encerrado entre los corchetes angulares < y > (signo “menor que” y
+                        signo “mayor que”)
+                        <body>
+                    Una etiqueta de cierre 
+                        se define con el corchete angular de apertura
+                        “<” seguido del carácter barra /, el nombre de etiqueta y finalmente
+                        el corchete angular de cierre.    
+                        </body>
+                    Entre la etiqueta de apertura y la de cierre, 
+                        se encuentra el contenido.
+                        El contenido puede ser texto u otras etiquetas. Una etiqueta con
+                        contenido tiene el siguiente formato:
+                        Ejemplo: <etiqueta>contenido</etiqueta>
+
+                    Si entre la etiqueta de apertura y la de cierre no se añade ningún
+                        contenido, se puede declarar con un corchete angular de apertura
+                        “<” seguido del nombre de la etiqueta, una barra / y finalmente el
+                        corchete angular de cierre   
+                        Ejemplo: <br />
+                    Los atributos añaden información adicional a una etiqueta. Cada
+                        etiqueta admite una serie de atributos. Se añaden únicamente a las
+                        etiquetas de apertura, justo después del nombre. Se admite más
+                        de un atributo por etiqueta. Siguen el esquema clave / valor de la
+                        siguiente forma: clave: “valor”.   
+                        Ejemplo: <img src=”logo.gif”></img>
+
+                        Por ejemplo, supongamos que tenemos el siguiente código HTML:
+                        <a href=”http://httpd.apache.org”>enlace ala página de apache</a>
+
+                        El texto que se encuentra encerrado entre la etiqueta de apertura
+                        <a> y la etiqueta de cierre </a>, será interpretado por el navegador
+                        como un enlace. El atributo href indica la pagina a la que referencia
+                        el enlace.
+
+                En un fichero que va a contener un documento HTML, debemos definir
+                        en la primera línea cual es la versión de HTML que vamos a utilizar.
+                            De esta forma, el navegador podrá interpretarlo correctamente.
+                        También es útil añadir el tipo de documento a la hora de desarrollar
+                            puesto que el editor de HTML que usemos, podrá validar si lo que
+                            escribimos es correcto.        
+   
+                A continuación vemos dos ejemplos de página que van a versiones
+                diferentes de HTML:  
+                    ILUSTRACIÓN: DEFINICIÓN DE DOCUMENTO EN HTML 4.01
+                        <!DOCTYPE html PUBLIC “-//W3C//DTD HTML 4.01
+                        Transitional//EN” “http://www.w3.org/TR/html4/loose.dtd”>
+                        <html>
+                            <head>
+                                <title>login</title>
+                                <meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1”>
+                            </head>
+                    ILUSTRACIÓN: DEFINICIÓN DE DOCUMENTO HTML5
+                        <!DOCTYPE html>
+                        <html>
+                            <head>
+                                <title>login</title>
+                                <meta charset=”UTF-8”>
+                            </head>    
+            PRUEBA  nota 100%
+                Tus respuestas
+
+                1. ¿Cuál de las siguientes es una herramienta para crear páginas Web?
+                Internet Explorer
+                Firefox
+                Eclipse
+                X Apache Tomcat
+
+                2. ¿Qué es HTML?
+                Un lenguaje de programación
+                Un protocolo del nivel del cliente
+                X Un lenguaje del marcado
+                Un documento binario de datos
+
+                3. ¿Qué elementos estoy añadiendo a mi página si escribo una etiqueta “a”?
+                Un título
+                X Un enlace
+                Un párrafo
+                Una imagen
+
+                4. En HTML, ¿cómo se define una etiqueta de apertura?
+                X Con un nombre de etiqueta encerrado entre los corchetes angulares < y > (signo “menor que” y signo “mayor que”)
+                Con corchete angular de apertura “<” seguido del carácter barra /, el nombre de etiqueta y finalmente el corchete angular de cierre.
+                Con corchete angular de apertura “<” seguido del nombre de etiqueta y, finalmente, el carácter barra / más el corchete angular de cierre.
+                Con corchete angular de apertura “<”, más carácter barra /, seguido del nombre de etiqueta y, finalmente, el carácter barra / más el corchete angular de cierre.
+
+                5. ¿Cómo se representa una etiqueta en la que no se añade ningún contenido?
+                Con los caracteres <!-- y los caracteres --> para el cierre
+                X Se puede declarar con un corchete angular de apertura “<” seguido del nombre de la etiqueta, una barra / y finalmente el corchete angular de cierre
+                Con corchete angular de apertura “<” seguido del carácter barra /, el nombre de etiqueta y finalmente el corchete angular de cierre
+                Con corchete angular de apertura “<”, más carácter barra /, seguido del nombre de etiqueta, de nuevo el carácter barra / más el corchete angular de cierre
+
+    MÓDULO 3. ETIQUETAS, FORMULARIOS Y HOJAS DE ESTILO CSS EN HTML
+        A continuación, veremos cómo 
+            podemos crear los elementos más comunes de una página web mediante etiquetas HTML, 
+            cómo utilizar el lenguaje CSS usado para definir la presentación de un documento HTML, 
+            así como la forma de crear formularios que nos van a permitir recoger diferentes 
+                datos desde una página web y enviarlos al servidor. 
+        Etiquetas principales del estándar HTML
+        Algunos de los elementos más comunes de una página web que pueden crearse 
+        mediante etiquetas HTML son: 
+            comentarios, 
+            la estructura principal del documento, 
+            las etiquetas de la cabecera 
+            y las etiquetas del cuerpo.
+
+        Comentarios
+            Son textos que no serán interpretados por el navegador.
+            Únicamente se utilizan para añadir información útil para el desarrollador.
+
+        Estructura principal del documento. 
+            Tres etiquetas marcan la estructura de un documento:
+                html: 
+                    etiqueta que define la raíz del documento. 
+                    Todos los elementos de la página deben estar contenidos en la etiqueta HTML.
+                header: 
+                    contiene las cabeceras de la página HTML. 
+                    Las cabeceras contienen información adicional para el navegador. 
+                    Pueden ser, por ejemplo, 
+                        el título de la página, 
+                        enlaces a hojas de estilo, 
+                        codificación de caracteres, etc.
+                 body: 
+                    es el cuerpo de la página.
+                    Dentro de esta etiqueta se encuentra el contenido que vamos a mostrar al usuario.
+                Etiquetas de la cabecera. 
+                    Los elementos que pueden incluirse en la cabecera son:
+                    title: 
+                        título de la página. 
+                        Se muestra en la barra de título del navegador 
+                        (o en una pestaña si usamos un navegador con pestañas). 
+                        Solo se puede añadir una vez por documento.
+                    meta (cambia en HTML5): 
+                        añade información adicional a la página de naturaleza variopinta. 
+                        Podemos indicar la codificación de caracteres del documento, 
+                        información sobre el autor,
+                        palabras clave para los motores de búsqueda, 
+                        etc. 
+                        Se pueden añadir los meta que sean necesarios, pero sin repetirlos.
+                    style: 
+                        añade hojas de estilo explícitamente en el propio documento HTML.
+                    link (cambia en HTML5): 
+                        lo podemos utilizar para referenciar ficheros externos, por ejemplo, 
+                        ficheros con hojas de estilo.
+                    script (cambia en HTML5): 
+                        también se puede añadir dentro del cuerpo. 
+                        Permite añadir un script en la propia página, 
+                        o referenciar un fichero que contiene scripts y es específico para ello. 
+                        Esta segunda forma, suele ser más adecuada puesto que el código del script 
+                        está totalmente separado del documento HTML.
+                Etiquetas del cuerpo
+                    El cuerpo y las etiquetas que incluye una página definen el contenido 
+                    que se muestra al usuario. 
+                    Todas las etiquetas del cuerpo del documento (excepto script) 
+                    pueden llevar los diferentes atributos: 
+                        los que definen un párrafo, 
+                        los que definen un título, 
+                        los que definen tipos de listas, 
+                        etc.
+
+                    En el documento descargable de esta página, 
+                    puedes ampliar información sobre la creación de estos elementos 
+                    y las diferentes etiquetas.     
+
+        1. Etiquetas principales de estándar HTML
+            A continuación veremos cómo podemos crear los elementos más comunes de
+            una página web mediante etiquetas HTML.  
+
+            1.1 | Comentarios
+                Los comentarios son textos que no serán interpretados por el
+                navegador.
+                Únicamente se utilizan para añadir información útil para el
+                desarrollador.
+                Los caracteres <!-- se utilizan para la apertura del comentario y
+                los caracteres --> se para el cierre.
+                
+                <!-- esto es un comentario -->
+
+            1.2 | Estructura principal del documento    
+                • html: 
+                    etiqueta que define la raíz del documento. Todos los
+                    elementos de la página deben estar contenidos en la etiqueta HTML.
+                • header: 
+                    contiene las cabeceras de la pagina HTML. 
+                    Las cabeceras contienen información adicional para el navegador.
+                    Pueden ser, por ejemplo, 
+                        el titulo de la página, 
+                        enlaces a hojas de estilo, 
+                        codificación de caracteres, etc.
+                • body: 
+                    es el cuerpo de la página. 
+                    Dentro de esta etiqueta se encuentra 
+                    el contenido que vamos a mostrar al usuario.
+
+                    <!DOCTYPE html>
+                    <html>
+                        <head>
+                            <title>login</title>
+                            <meta charset="UTF-8">
+                        </head>
+                        <body>
+                        ...
+                        </body>
+                    </html>
+
+            1.3 | Etiquetas de la cabecera    
+                Ya hemos visto que es la cabecera de una página. 
+                Ahora veremos cuáles son los principales elementos
+                que podemos incluir en ella:
+                    • title: 
+                        titulo de la página. 
+                        Se muestra en la barra de titulo del navegador 
+                        (o en una pestaña si usamos un navegador con pestañas). 
+                        Solo se puede añadir una vez por documento.
+                    • meta (cambia en HTML5): 
+                        añade información adicional a la página de naturaleza variopinta. 
+                        Podemos indicar 
+                            la codificación de caracteres del documento, 
+                            información sobre el autor,
+                            palabras clave para los motores de búsqueda, etc. 
+                            Se pueden añadir los meta que sean necesarios pero sin repetirlos.
+                        Algunos ejemplos de meta que podemos añadir:    
+
+                        CODIFICACIÓN DE CARACTERES CON UTF-8
+                        La forma en la que se especifica la codificación de caracteres
+                        cambia en HTML 5
+
+                            <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8” />
+
+                        TEXTO AUTOR
+                            <meta name=”author” content=”nombre del autor” />  
+
+                        TEXTO EMAIL    
+                            <meta name=”email” content=”nombreautor@dominio.com” />      
+
+                        TEXTO: ESTILO EN DOCUMENT HTML
+                            • style: 
+                                añade hojas de estilo explícitamente en el propio documento HTML.  
+
+                                <style type=”text/css”>
+                                    h1.blue {
+                                    color: blue;
+                                    }
+                                </style>  
+
+                        link (cambia en HTML5): 
+                            lo podemos utilizar para referenciar ficheros externos, por ejemplo, 
+                            ficheros con hojas de estilo.
+                            Es mejor practica usar referenciar ficheros externos de hojas
+                            de estilo, que definirlos en el propio documento HTML con la
+                            etiqueta style para separar el contenido de la presentación.
+                            También podemos añadir el icono de favoritos.        
+
+                        • script (cambia en HTML5): 
+                            también se puede añadir dentro del cuerpo. 
+                            Permite añadir un script en la propia página, o
+                            referenciar un fichero que contiene scripts y es específico para
+                            ello. Esta segunda forma, suele ser más adecuada puesto que
+                            el código del script está totalmente separado del documento
+                            HTML.    
+
+                            SCRIPT EXPLÍCITO EN LA PÁGINA
+
+                                <script type=”text/javascript”>
+                                    alert(‘hola mundo’);
+                                </script>
+
+                            FICHERO DE SCRIPTS REFERENCIADO
+                            
+                                <script type=”text/javascript” src=”hola_mundo.js” />
+            1.4 | Etiquetas del cuerpo
+                El cuerpo y las etiquetas que incluye una página definen el contenido 
+                que se muestra al usuario. 
+                Todas las etiquetas del cuerpo del documento (excepto script) 
+                pueden llevar los siguientes atributos:
+                • id: 
+                    este atributo debe tener un valor único en toda la página, no
+                    deben existir dos etiquetas con el mismo valor en su atributo
+                    id.
+                    El valor de este atributo, identifica unívocamente la etiqueta
+                    en el que esta contenido dentro de la pagina.
+                    Asignar un identificador a un elemento, nos puede servir, por
+                    ejemplo, 
+                        para crear un enlace interno dentro de la propia página.
+                        En posteriores módulos veremos cómo se pueden acceder a
+                        dichos elementos para manipularlos mediante javascript.
+                • style: 
+                    añade los estilos CSS especificados en el valor del
+                    atributo.                    
+                • class: 
+                    añade un estilo CSS definido previamente en una hoja
+                    al elemento cuyo nombre se especifica en el valor del atributo.
+                • title: 
+                    añade un texto explicativo especificado en el valor del
+                    atributo. Se muestra como un tool tip (globo informativo). 
+                    La información se muestra al pasar el cursor sobre el elemento
+                    generado por la etiqueta.    
+                 h[x] (titulo): 
+                    define un titulo donde x es sustituido por un
+                    número del 1 al 6. 
+                    h1 el titulo con mayor tamaño de letra y
+                    peso semántico y h6 el de menor tamaño y peso semántico. 
+                    Si no aplicamos hojas de estilo, se ve de la siguiente forma:
+                        <h1>título 1</h1>
+                        <h2>título 2</h2>
+                        <h3>título 3</h3>
+                        <h4>título 4</h4>
+                        <h5>título 5</h5>
+                        <h6>título 6</h6>
+                • p (párrafo): 
+                    define un párrafo. Entre cada párrafo, añade un
+                    pequeño espaciado si no usamos ningún estilo adicional. Si no
+                    aplicamos hojas de estilo, se ve de la siguiente forma:
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste
+                            natus error sit voluptatem.
+                        </p>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+
+                        Nótese que los saltos de línea existentes en el texto del documento
+                        HTML no se materializan como tal en el navegador. Tampoco el uso
+                        de múltiples espacios en blanco se ven reflejados como tal.
+                        Cualquier concatenación de tabulaciones, saltos de línea, y espacios
+                        en blanco o combinaciones de estos, se representan como un único
+                        espacio en blanco independientemente del número de ocurrencias
+                        existentes.
+                • pre: 
+                    texto pre-formateado. El texto incluido como contenido de
+                    esta etiqueta se representa tal y como se escribe, manteniendo
+                    espacios en blanco, saltos de línea, tabulaciones, etc.
+                LISTA NUMERADA    
+                • ol / li (lista numerada / elemento lista): 
+                    la etiqueta ol define una lista numerada, 
+                    mientras que li contiene cada elemento de la lista. 
+                    Si no aplicamos hojas de estilo, se ve de la siguiente
+                    forma:        
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Sed do eiusmod tempor incididunt</li>
+                        </ol>
+
+                        1. Lorem ipsum dolor sit amet
+                        2. Sed do eiusmod tempor incididunt
+                LISTA NO NUMERADA        
+                ul / li (lista no numerada / elemento lista):
+                    la etiqueta ul
+                    define una lista no numerada, mientras que li contiene cada
+                    elemento de la lista. Si no aplicamos hojas de estilo, se ve de
+                    la siguiente forma:        
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Sed do eiusmod tempor incididunt</li>
+                    </ul>
+                        • Lorem ipsum dolor sit amet
+                        • Sed do eiusmod tempor incididunt
+                TABLE        
+                table, caption, thead, tbody, tr, th, td (tabla / cabecera tabla /
+                    cuerpo tabla / fila / celda cabecera / celda cuerpo): la etiqueta
+                    table define una tabla en HTML. Dentro de esta etiqueta,
+                    añadimos las etiquetas thead y tbody, que son la cabecera
+                    (títulos de la tabla) y el cuerpo de la tabla 
+                    (datos contenidos en la tabla) respectivamente
+
+                    Dentro de las etiquetas thead y tbody, podemos añadir filas
+                    mediante la etiqueta tr.
+                    En las filas (tr) de la cabecera, podemos añadir celdas de titulo
+                    mediante la etiqueta th.
+                    En las filas (tr) del cuerpo de la tabla, podemos añadir celdas de
+                    datos mediante la etiqueta td.
+                    El número de celdas debe coincidir en cada fila, independientemente
+                    de si son de la cabecera o del cuerpo. Si no es así, podemos hacer
+                    que una celda ocupe más de un hueco con el siguiente atributo de la
+                    etiqueta td:
+
+                    • colspan: define el número de huecos que va a ocupar una
+                    columna en una fila.
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>título 1</th>
+                                <th>título 2</th>
+                                <th>título 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>valor 1</td>
+                                <td>valor 2</td>
+                                <td>valor 3</td>
+                            </tr>
+                            <tr>
+                                <td colspan=”2”>valor 4</td>
+                                <td>valor 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    título 1    título 2    título 3
+                    valor 1     valor 2     valor 3
+                    valor 4                 valor 5
+
+                    También podemos omitir la cabecera de la tabla suprimiendo las
+                    etiquetas thead y tbody. Añadimos las filas directamente a la
+                    tabla de la siguiente forma:
+
+                    <table>
+                        <tr>
+                            <td>valor 1</td>
+                            <td>valor 2</td>
+                            <td>valor 3</td>
+                        </tr>
+                        <tr>
+                            <td>valor 4</td>
+                            <td>valor 5</td>
+                            <td>valor 6</td>
+                        </tr>
+                    </table>
+
+                    Podemos añadir una leyenda a la tabla usando la etiqueta caption
+                    dentro de la tabla. El contenido de dicha etiqueta es el que se
+                    incluirá en la leyenda.
+
+                a (enlace): nos permite crear un enlace a un fichero o pagina
+                        de nuestro sitio web, externo a nuestro sitio web o a elemento
+                        interno de la propia página que tenga un atributo id declarado. El
+                        contenido de la etiqueta será convertido en un enlace. Atributos
+                        principales
+                    • href: ruta del elemento referenciado. Si el elemento es un
+                        fichero o página externa, su valor será una ruta (absoluta o
+                        relativa), aunque también puede ser una URL.
+                        Si el elemento es un fichero o pagina externa, su valor será una
+                        URL.
+                        Si el elemento es interno de la propia página (referencia a una
+                        etiqueta del propio documento), su valor tendrá el siguiente
+                        formato: #id donde id es el identificador de la etiqueta HTML
+                        que queremos enlazar.
+                    • target: define el destino del enlace. Los valores posibles son:
+                        −_self (valor por defecto si no se especifica el atributo target): 
+                            abre el enlace en la misma ventana.
+                        −_blank: 
+                            abre el enlace en una ventana o pestana nueva.
+                        Si no aplicamos hojas de estilo, se ve de la siguiente forma:
+                        ENLACE EXTERNO A VENTANA NUEVA
+                            <a href=”httpd.apache.org” target=”_blank”>enlace a apache</a>
+
+                            enlace a apache
+                        ENLACE INTERNO DE LA PÁGINA
+                            <a href=”#titulo”>volver al inicio del tema</a>
+                • img (imagen): 
+                    inserta una imagen en el documento. Atributos:
+                        • src: URL o ruta donde se encuentra la imagen.
+                        • alt: texto alternativo. Debe ser un texto descriptivo de la
+                            imagen. Se utiliza en lectores para invidentes.
+                        • height: altura de la imagen en pixeles.
+                        • width: anchura de la imagen en pixeles.
+                            Si no aplicamos hojas de estilo, se ve de la siguiente forma:
+
+                        <h1>insertamos una imagen:</h1>
+                        <img alt=”icono de iceweasel” src=”iceweasel.png” height=”128” width=”128”>
+
+                • div (divisor o capa): 
+                    define una división o sección en un
+                    documento HTML agrupando elementos en un bloque 
+                    (salto de línea antes y después del contenido). 
+                    Su misión es permitir aplicar estilos sobre la sección o bloque completo.
+                    Ejemplo:
+
+                        <div class=”rojo”>esto es una capa</div>
+                        <a href=”#titulo”>volver al inicio</a>
+
+                        esto es una capa
+                        volver al inicio
+                • span (divisor de elementos inline): 
+                    agrupa los elementos que
+                    contiene, pero no produce ninguno a nivel visual. Simplemente
+                    crea un grupo de contenidos para poder aplicar estilos sobre
+                    el conjunto completo. A diferencia de div, no crea un bloque, si
+                    no que puede ser aplicado, por ejemplo, en una línea de texto.
+                    Ejemplo:  
+                        <p>
+                            dentro de este texto resaltamos lo que es
+                            <span class=”rojo”>
+                                importante
+                            </span>
+                        </p>  
+
+                        dentro de este texto resaltamos lo que es importante    
+
+                • br (salto de linea): 
+                    crea un salto de línea.
+                • hr (linea o regla horizontal): 
+                    elemento visual utilizado para separar secciones.
+                • applet / object 
+                    (desaprobado en HTML5): etiqueta que permite insertar
+                    un objeto externo a HTML en una
+                    página web. Podríamos insertar un
+                    plugin de Adobe Flash o un Applet de
+                    Java.
+
