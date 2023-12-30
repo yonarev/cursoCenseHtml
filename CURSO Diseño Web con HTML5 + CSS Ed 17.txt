@@ -482,7 +482,6 @@ SABADO 23/DIC DOMINGO 12 DIC
                 los caracteres --> se para el cierre.
                 
                 <!-- esto es un comentario -->
-
             1.2 | Estructura principal del documento    
                 • html: 
                     etiqueta que define la raíz del documento. Todos los
@@ -509,7 +508,6 @@ SABADO 23/DIC DOMINGO 12 DIC
                         ...
                         </body>
                     </html>
-
             1.3 | Etiquetas de la cabecera    
                 Ya hemos visto que es la cabecera de una página. 
                 Ahora veremos cuáles son los principales elementos
@@ -602,7 +600,7 @@ SABADO 23/DIC DOMINGO 12 DIC
                     atributo. Se muestra como un tool tip (globo informativo). 
                     La información se muestra al pasar el cursor sobre el elemento
                     generado por la etiqueta.    
-                 h[x] (titulo): 
+                • h[x] (titulo): 
                     define un titulo donde x es sustituido por un
                     número del 1 al 6. 
                     h1 el titulo con mayor tamaño de letra y
@@ -645,7 +643,6 @@ SABADO 23/DIC DOMINGO 12 DIC
                     texto pre-formateado. El texto incluido como contenido de
                     esta etiqueta se representa tal y como se escribe, manteniendo
                     espacios en blanco, saltos de línea, tabulaciones, etc.
-                LISTA NUMERADA    
                 • ol / li (lista numerada / elemento lista): 
                     la etiqueta ol define una lista numerada, 
                     mientras que li contiene cada elemento de la lista. 
@@ -658,8 +655,7 @@ SABADO 23/DIC DOMINGO 12 DIC
 
                         1. Lorem ipsum dolor sit amet
                         2. Sed do eiusmod tempor incididunt
-                LISTA NO NUMERADA        
-                ul / li (lista no numerada / elemento lista):
+                • ul / li (lista no numerada / elemento lista):
                     la etiqueta ul
                     define una lista no numerada, mientras que li contiene cada
                     elemento de la lista. Si no aplicamos hojas de estilo, se ve de
@@ -670,8 +666,7 @@ SABADO 23/DIC DOMINGO 12 DIC
                     </ul>
                         • Lorem ipsum dolor sit amet
                         • Sed do eiusmod tempor incididunt
-                TABLE        
-                table, caption, thead, tbody, tr, th, td (tabla / cabecera tabla /
+                • table, caption, thead, tbody, tr, th, td (tabla / cabecera tabla /
                     cuerpo tabla / fila / celda cabecera / celda cuerpo): la etiqueta
                     table define una tabla en HTML. Dentro de esta etiqueta,
                     añadimos las etiquetas thead y tbody, que son la cabecera
@@ -737,8 +732,7 @@ SABADO 23/DIC DOMINGO 12 DIC
                     Podemos añadir una leyenda a la tabla usando la etiqueta caption
                     dentro de la tabla. El contenido de dicha etiqueta es el que se
                     incluirá en la leyenda.
-
-                a (enlace): nos permite crear un enlace a un fichero o pagina
+                • a (enlace): nos permite crear un enlace a un fichero o pagina
                         de nuestro sitio web, externo a nuestro sitio web o a elemento
                         interno de la propia página que tenga un atributo id declarado. El
                         contenido de la etiqueta será convertido en un enlace. Atributos
@@ -775,7 +769,6 @@ SABADO 23/DIC DOMINGO 12 DIC
 
                         <h1>insertamos una imagen:</h1>
                         <img alt=”icono de iceweasel” src=”iceweasel.png” height=”128” width=”128”>
-
                 • div (divisor o capa): 
                     define una división o sección en un
                     documento HTML agrupando elementos en un bloque 
@@ -803,7 +796,6 @@ SABADO 23/DIC DOMINGO 12 DIC
                         </p>  
 
                         dentro de este texto resaltamos lo que es importante    
-
                 • br (salto de linea): 
                     crea un salto de línea.
                 • hr (linea o regla horizontal): 
@@ -814,4 +806,440 @@ SABADO 23/DIC DOMINGO 12 DIC
                     página web. Podríamos insertar un
                     plugin de Adobe Flash o un Applet de
                     Java.
+        1. Formularios
+            Formularios HTML
+            Los formularios HTML son elementos que 
+                permiten recoger datos del cliente desde una página web 
+                (en el lado del cliente) y enviarlos al servidor.
+                Dentro del formulario, podemos introducir 
+                    componentes HTML de distintas naturalezas para este fin. 
+                    Por ejemplo, 
+                        campos y cajas de texto, 
+                        selectores, 
+                        checkbox, 
+                        radio, 
+                        etc.
+                Desde un formulario podemos, incluso, mandar ficheros al servidor.
+                Usando formularios, tenemos un mecanismo para que el usuario 
+                pueda interactuar con nuestra aplicación. 
+                Un formulario también puede ser utilizado para mostrar datos al cliente. 
+            1.1 | Características       
+                Características de formularios HTML
+                Un formulario permite enviar al servidor la información 
+                recogida por los diferentes elementos que lo componen.
+                Los datos se envían como una lista de parámetros. 
+                Cada parámetro se corresponde con un elemento del formulario.
+                La lista de parámetros se envía en formato clave / valor,
+                    donde la clave es el nombre del elemento del formulario 
+                        al que corresponde 
+                    y el valor es la información introducida o seleccionada 
+                        por el usuario.
+                La información de un formulario se envía en una petición HTTP, 
+                por lo que debemos indicar en el formulario cual va a ser la URL 
+                del servidor que va a atender nuestra petición.
+                Una petición HTTP admite varios métodos o verbos. 
+                Podemos indicar en el formulario si la información se va a enviar 
+                usando el método GET o POST.
+                Si no se especifica el método, por defecto se envía por GET.
 
+                    • Método GET: 
+                        la información recogida del formulario se envía en la propia URL 
+                        de la petición con el siguiente formato:
+
+                            url?param_1=valor_1&param_2=valor_2&.....param_n=valor_n
+
+                        Al enviarse en la propia URL, los parámetros serian visibles 
+                        para el usuario.    
+                    • Método POST: 
+                        los datos del formulario se envían dentro del cuerpo 
+                        del mensaje HTTP.    
+
+                            valor_1&param_2=valor_2&.....param_n=valor_n
+
+                        Aunque los parámetros también son accesibles por el usuario, 
+                        no se muestran directamente en el navegador. 
+                        Es necesario utilizar alguna herramienta o plug-in del navegador 
+                        para poder acceder a ellos.    
+
+            1.2 | Creación de formularios con HTML
+                La etiqueta form es el elemento principal en la creación de un
+                formulario. Se encarga de agrupar los elementos que recogerán
+                los valores que serán enviados en la petición HTTP. Estos son
+                algunos de sus atributos:
+                    • action (obligatorio):
+                        URL que va a ser llamada cuando se envíen los datos del formulario.
+                    • method: 
+                        método HTTP utilizado en la llamada al servidor. Están
+                        permitidos los valores get y post.
+                    • target: 
+                        define donde se va a mostrar la respuesta del servidor.
+                        Puede tener los mismos valores que el atributo target de la
+                        etiqueta a: 
+                            _self, 
+                            _blank, 
+                            _parent, etc.
+                Para añadir un formulario a una página web, necesitamos conocer
+                las etiquetas con las que definimos los campos de entrada de datos
+                del formulario.
+
+                Los elementos de entrada de datos de un formulario pueden poseer
+                los siguientes atributos comunes:
+                • name: 
+                    este atributo identifica el elemento dentro del formulario.
+                    Pueden existir elementos con el mismo atributo name puesto
+                    que es relativo al formulario en el que están incluidos.
+                • disabled: 
+                    el elemento aparece como desactivado. No es
+                    modificable por el usuario y visualmente, se presenta de
+                    diferente forma para que el usuario identifique claramente que
+                    el elemento está inactivo.
+                    Puede ser útil en casos en los que, dependiendo del perfil del
+                    usuario, queramos que no pueda introducir un valor, y queramos
+                    hacérselo saber expresamente.
+                    Un ejemplo puede ser un formulario en el que deben darse de alta
+                    los datos de una empresa. Si se sabe que el usuario es autónomo,
+                    no podemos permitirle seleccionar un tipo de empresa    
+            1.3 | Elementos de un formulario
+                A continuación veremos que etiquetas podemos incluir dentro de un formulario 
+                (etiqueta form)
+                    • input: 
+                        elemento genérico de entrada de datos. Se puede concretar
+                        con el atributo type. Algunos atributos interesantes son:
+                        − type: 
+                            define el tipo de entrada de datos que queremos utilizar.
+                            Dependiendo del valor de este atributo, el componente
+                            interactuara de una manera concreta con el usuario y tendrá
+                            un aspecto u otro. Más adelante, detallaremos los tipos que
+                            podemos utilizar.
+                        − value: 
+                            valor por defecto del elemento.
+                        − readonly: 
+                            si aparece este atributo, el elemento es de solo
+                            lectura y no sería modificable por el usuario
+                    • Textarea: 
+                        caja de texto que admite múltiples líneas. Se utiliza
+                        para entradas de texto de gran tamaño y admite saltos de línea.
+                        Si se añade contenido a la etiqueta, este aparecerá como valor
+                        por defecto de la misma.  
+
+                        Si no se indica lo contrario mediante estilos, 
+                        el área de texto permitirá ser redimensionada por el usuario. 
+                        Atributos de textarea:
+                            − rows: 
+                                numero de filas.
+                            − cols: 
+                                numero de columnas.
+                            − readonly: 
+                                al igual que en el elemento input, si aparece
+                                este atributo, el elemento es de solo lectura y no sería
+                                modificable por el usuario.
+
+                    • select / option: 
+                        elemento que permite elegir entre una lista
+                        de opciones. El elemento principal es la etiqueta select que
+                        contendrá la lista de posibles opciones.
+
+                        Atributos de la etiqueta select:
+                            • múltiple: 
+                                si aparece este atributo, el componente permite
+                                seleccionar más de un elemento de la lista. Manteniendo
+                                pulsada la tecla crtr y haciendo click en cada elemento de los que
+                                queremos seleccionar.
+
+                            Como contenido de la etiqueta select, podemos tener una o más
+                            etiquetas option. Por cada etiqueta option que añadimos a select, se
+                            añade un elemento a la lista desplegable que se muestra al usuario.
+                            El contenido de la etiqueta option es el texto que se mostrara al
+                            usuario.
+
+                        Atributos de la etiqueta option:
+                            − value: 
+                                valor que se enviara al servidor si se selecciona la
+                                opción.
+                            − disabled: 
+                                no solo podemos desactivar el componente
+                                completo añadiendo este atributo a la etiqueta select, sino
+                                que también podemos desactivar algunas de las opciones
+                                concretas.
+                            − selected: 
+                                si se presenta este atributo en una opción,
+                                aparecerá como seleccionada. Si no, se selecciona por
+                                defecto la primera opción. 
+
+                        EJEMPLO SELECT    
+                                seleccione una divisa:
+                                    <select>
+                                        <option value=”dolar”>$</option>
+                                        <option value=”libra”>£</option>
+                                        <option value=”euro”>€</option>
+                                        <option value=”yen” disabled>¥</option>
+                                    </select>   
+            1.4 | Algunos tipos de elemento input
+
+               Ya hemos visto que un elemento de tipo input nos permite añadir 
+               campos de entrada de datos a un
+                formulario. Ahora veremos qué tipos podemos incluir.
+                    • reset: 
+                        carga los valores por defecto de todos los campos del
+                        formulario. Se presenta al usuario como un botón. El valor de su
+                        atributo value define el texto que contiene el botón.
+                    • submit: 
+                        realiza la petición HTTP usando la URL definida en
+                        el atributo action del formulario, y añadiendo los parámetros
+                        correspondientes a los elementos contenidos en el formulario.
+                        Se presenta al usuario como un botón. El valor de su atributo
+                        value define el texto que contiene el botón.    
+                    • text: 
+                        entrada de texto estándar. Solo admite una sola línea   
+                        EJEMPLO TEXT
+                            nombre: <input type=”text” />
+
+                    • password: 
+                        es igual que un input de tipo text solo que cuando se
+                        escribe texto en el campo, se oculta con un asterisco o cualquier
+                        otro símbolo de ocultación.
+                        EJEMPLO PASSWORD
+                            password: <input type=”password” />
+
+                    • hidden: 
+                        campo invisible para el usuario. Se suele utilizar para
+                        enviar datos al servidor cuyo valor no debe ser conocido ni
+                        editado por el usuario.
+                    • radio: 
+                        componente que permite seleccionar una opción entre
+                        las presentadas al usuario. Tiene la misma función que el select
+                        simple (solo una opción) solo que siempre se muestran todas las
+                        opciones en el formulario.   
+
+                        Para que funcione correctamente, se debe añadir un input por
+                        cada opción seleccionable con un valor (atributo value) distinto,
+                        pero con el mismo nombre (atributo name). Atributos propios del
+                        tipo radio:   
+
+                        − checked: 
+                            si se presenta este atributo en alguno de los input,
+                            este será el que aparezca seleccionado por defecto.  
+                        EJEMPLO RADIO
+                            <div>selecciones una de las siguientes opciones:</div>
+                            <div>
+                                <input type=”radio” value=”valor 1” />opción 1
+                            </div>
+                            <div>
+                                <input type=”radio” value=”valor 2” checked />opción2
+                            </div>
+                            <div>
+                                <input type=”radio” value=”valor 3” />opción 3
+                            </div>
+                    • checkbox: 
+                        elemento para marcar y desmarcar. 
+                        Si se desmarca, no se envía el atributo al cliente.
+                        Si se marca, se envía el parámetro,
+                        y como valor se añade el atributo value.
+                        Para que aparezca marcado por defecto, se debe añadir el
+                        atributo checked        
+
+            Caso práctico "Formularios HTML"
+                A continuación te presentamos un caso práctico 
+                relacionado con los formularios en HTML. 
+                Lee atentamente el enunciado del mismo 
+                y desarrolla la solución correcta. 
+                Cuando lo hayas completado, puedes subir la solución al foro 
+                para compartirla con tus compañeros.
+
+                Crea un formulario para el control de acceso a una web. 
+                Debe llamar a la URL http://127.0.0.1/login_usuario con los campos
+                    nombre_usuario y password. Los atributos no deben ser visibles
+                    en la URL.
+                La página debe tener un título que indique la pantalla en la que se
+                encuentra (también debe mostrar el título en el navegador).
+                No es necesario que sea estético.
+
+                    <!DOCTYPE html>
+                    <html lang="es">
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Control de Acceso</title>
+                    </head>
+                    <body>
+                        <h1>Control de Acceso</h1>
+                        <form id="loginForm" action="http://127.0.0.1/login_usuario" method="POST">
+                            <label for="nombre_usuario">Usuario:</label>
+                            <input type="text" id="nombre_usuario" name="nombre_usuario" required><br><br>
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" required><br><br>
+                            <input type="submit" value="Iniciar sesión">
+                        </form>
+                    </body>
+                    </html>
+
+        1. Creación de hojas de estilo
+            CSS (Cascading Style Sheets) es un lenguaje usado para definir la presentación
+            de un documento HTML.         
+            La idea que subyace detrás del CSS es separar la estructura de un
+            documento de su presentación.
+
+            Cuando usamos HTML, todos los elementos mostrados tienen
+            un estilo por defecto definido, CSS redefine estos atributos para
+            mejorar la presentación de una página o, incluso permite visualizar
+            un mismo HTML de varias formas diferentes.
+
+            1.1 | La arquitectura en tres niveles
+                • Inline: 
+                    Usando CSS directamente sobre el elemento HTML que
+                    queremos modificar. Se realiza usando la etiqueta style de los
+                    elementos HTML, y como valor, se añaden todos los estilos CSS
+                    que queramos aplicar separados por el carácter punto y coma.
+                    Evidentemente usar CSS inline no es lo más recomendable, debe
+                    usarse para cosas muy puntuales, ya que su mantenimiento es
+                    complicado (esta sobre la propia página, hay que buscarlo). Sin
+                    embargo, para hacer pruebas o ejemplos pequeños es muy útil.
+
+                        <h1 style=”color: red; “>esto es un título</h1
+
+                • Internal: 
+                    Usando la etiqueta style en el área head del documento
+                    HTML para redefinir el estilo de los elementos HTML. Parece
+                    algo más adecuado que inline puesto que unifica todos los estilos
+                    de una página en un mismo sitio. Sin embargo, sigue sin permitir
+                    reutilizar estilos entre distintas páginas de nuestro sitio web.
+
+                        <style>
+                            h1. rojo {
+                                color: red;
+                            }
+                        </style>
+
+                        <h1 class=”rojo”>esto es un título</h1>
+                • External: 
+                    Usando ficheros externos que posean la configuración
+                    CSS que queramos aplicar.
+                    Es el sistema más recomendado ya que fomenta la reutilización
+                    y el mantenimiento de las hojas de estilo en diferentes paginas
+                    HTML.
+                        <link rel=”stylesheet” href=”styles.css” />
+
+                        <h1 class=”rojo”>esto es un título</h1>
+            1.2 | Cómo se define un estilo
+                En primer lugar, veremos cómo se definen las propiedades CSS. El
+                formato para definir un estilo sería el siguiente:
+                    selector {
+                    propiedad_1: valor_1;
+                    propiedad_2: valor_2;
+                    ...
+                    propiedad_n: valor_n;
+                    }
+
+                Existen las siguientes maneras para definir el elemento al que aplica
+                un estilo.
+            1.3 | Selectores
+                • *: 
+                    selector universal. Se aplica a todas las etiquetas. 
+
+                        * {...} 
+
+                • etiqueta: 
+                    selector de tipo o etiqueta. Se aplica a todas las
+                    etiquetas con ese nombre.           
+
+                        div {...}
+
+                • etiqueta_1, etiqueta_2, … , etiqueta_n : 
+                    agrupación de selectores.
+                        Se aplica a todas las etiquetas que coincidan con dichos nombres
+                        de etiqueta.      
+
+                        h1, h2, h3 {...} 
+
+                • etiqueta subetiqueta: 
+                    selector descendiente. 
+                        Se aplica a todas las subetiquetas descendientes directas o no 
+                        de una etiqueta.  
+
+                        div p {...}   
+
+                • .nombre_estilo: 
+                    selector de clase. 
+                        Se aplica a las etiquetas que tengan como valor de atributo 
+                        class el valor nombre_clase.  
+
+                        .nombre_clase {...}   
+
+                • #id: 
+                    selector de identificador. 
+                        Se aplica a la etiqueta cuyo atributo id coincida con identificador.
+
+                        #identificador {...}
+
+                • etiqueta > subetiqueta : 
+                    selector de hijos. 
+                        Se aplica a todas las subetiquetas (derecha) 
+                        que sean hijos directos de la etiqueta (izquierda).   
+
+                        div>p {...}
+
+                • etiqueta_1+etiqueta_2: 
+                    selector adyacente. 
+                        Se aplican a todas las etiquetas de tipo etiqueta_2 
+                        que estén justo al lado de una etiqueta etiqueta_1.   
+
+                        div+p {...}
+
+                • etiqueta[atributo]: 
+                    Selector de atributos por nombre. 
+                        Selecciona todas las etiquetas que contengan dicho atributo.  
+
+                        input[selected] {...}  
+
+                • etiqueta[atributo=”valor”]: 
+                    selector de atributos por valor.
+                        Selecciona todas las etiquetas que contengan dicho atributo con
+                        ese determinado.    
+
+                        input[name=”dni”] {...}
+
+            1.4 | Pseudoclases CSS3
+                Las pseudoclases se aplican a etiquetas que se encuentran en un estado concreto. 
+                De esta forma,podemos aplicar estilos distintos, por ejemplo, 
+                a un estilo visitado y a otro no visitado.     
+
+                    selector:estado {
+                    propiedad_1: valor_1;
+                    propiedad_2: valor_2;
+                    ...
+                    propiedad_n: valor_n;
+                    }    
+
+                    Estos estilos se declaran de la siguiente forma:
+                        • hover: 
+                            selecciona el elemento sobre el cual pasa el ratón.
+                        • active: 
+                            selecciona el elemento que activa el usuario a través de
+                            un click.
+                        • focus: 
+                            selecciona el elemento que tiene el foco del navegador.
+                            También hay algunos específicos para enlaces:
+                        − link: 
+                            selecciona los enlaces que no hayan sido visitados por
+                            el usuario.
+                        − visited: 
+                            selecciona los enlaces que hayan sido visitados por
+                            el usuario.    
+
+                            h1:hover {
+                            color: red;
+                            }
+
+                            <h1>esto es un título</h1>   
+
+            1.5 | Estudio de las propiedades CSS3  
+                Después de ver como se define un estilo, 
+                vamos a ver las propiedades que podemos configurar en él:  
+                    • Tipo de letra (fuente)
+                        − font-family: tipo de letra
+                        − font-size: tamano de letra
+                        − font-style: inclinación (cursiva).
+                             Posibles valores: normal | italic |oblique
+                        − font-weight: grosor de la fuente. 
+                            Posibles valores: normal
+                                | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 |
+                                700 | 800 | 900            
