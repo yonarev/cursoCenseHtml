@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(153, 118, 118);
+}
+table {
+    font-family: arial;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-collapse: collapse;
+
+}
+table td {
+   border: solid black 1px;
+   min-width: 170px;
+   padding-left: 20px;
+   text-align: center;
+}
+table th{
+   border: solid black 1px;
+   background-color: orange;
+
+}
+tr {
+   background-color: rgb(116, 62, 217);
+}
+tr+tr {
+    background-color: rgb(177, 172, 186);
+ }
+ tr+tr+tr {
+   background-color: rgb(116, 62, 217);
+ }
+ tr+tr+tr+tr {
+    background-color: rgb(177, 172, 186);
+ }
+ tr+tr+tr+tr+tr {
+    background-color: rgb(116, 62, 217);
+ }
+
+caption{
+   caption-side: bottom; 
+   background-color: orange;
+}

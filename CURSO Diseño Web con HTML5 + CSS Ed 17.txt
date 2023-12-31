@@ -248,6 +248,7 @@ SABADO 23/DIC DOMINGO 12 DIC
                     DOCTYPE nuevo que se utiliza. También contiene el elemento
                     meta simplificado que se utiliza para especificar la codificación de
                     caracteres UTF-8.
+9:22 30-12-2023 sabado                    
             1.2 | Herramientas de edición: Eclipse
                 Vamos a ver algunas de las herramientas que el plugin nos proporciona:
                     • Es el resultado de la sintaxis. Las palabras reservadas y signos
@@ -1071,7 +1072,6 @@ SABADO 23/DIC DOMINGO 12 DIC
                         </form>
                     </body>
                     </html>
-
         1. Creación de hojas de estilo
             CSS (Cascading Style Sheets) es un lenguaje usado para definir la presentación
             de un documento HTML.         
@@ -1235,11 +1235,353 @@ SABADO 23/DIC DOMINGO 12 DIC
                 Después de ver como se define un estilo, 
                 vamos a ver las propiedades que podemos configurar en él:  
                     • Tipo de letra (fuente)
-                        − font-family: tipo de letra
-                        − font-size: tamano de letra
-                        − font-style: inclinación (cursiva).
+                        − font-family: 
+                            tipo de letra
+                        − font-size: 
+                            tamano de letra
+                        − font-style: 
+                            inclinación (cursiva).
                              Posibles valores: normal | italic |oblique
-                        − font-weight: grosor de la fuente. 
+                        − font-weight: 
+                            grosor de la fuente. 
                             Posibles valores: normal
                                 | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 |
                                 700 | 800 | 900            
+                    • Texto
+                        − color: 
+                            color del texto.
+                        − direction: 
+                            dirección del texto. 
+                            Posibles valores ltr | rtl
+                        − letter-spacing: 
+                            espacio entre caracteres.
+                        − line-height: 
+                            espaciado entre líneas.
+                        − text-align: 
+                            alineación de texto. 
+                            Posibles valores: 
+                                center | justify | left | right
+                        − vertical-align: 
+                            alineación vertical. Se puede añadir un valor
+                            numérico o uno de los siguientes valores: 
+                                baseline | bottom | middle | sub | super | text-bottom | text-top | top
+                        − text-decoration: 
+                            decoración del texto. 
+                            Posibles valores:
+                            none | blink | line-through | overline | underline
+                        − text-indent: 
+                            tamaño de sangría de la primera línea de un
+                            párrafo.
+                        −white-space: 
+                            comportamiento de saltos de línea y espacios
+                            en blanco. 
+                            Posibles valores: 
+                                normal | nowrap | pre | pre-line | pre-wrap
+                        • word-spacing: 
+                            espacio entre palabras.
+                        • Text-shadow:
+                            sombras del texto.  
+                        • Bordes
+                            − border-style: 
+                                estilo del borde. Puede contener los siguientes
+                                valores:
+                                    none | hidden | dashed | dotted | double | groove |
+                                    inset | outset | ridge | solid
+                                También existen propiedades que permiten definirlo por
+                                separado: 
+                                    border-[left | right | top | bottom]-style
+                            − border-color: 
+                                color del borde. Su valor puede ser 
+                                    un color o
+                                    el valor transparent si es transparente.
+                                También existen propiedades que permiten definirlo por
+                                separado: 
+                                    border-[left | right | top | bottom]-color
+                            − border-width: 
+                                anchura del borde. Puede ser un valor en
+                                pixeles o uno de los siguientes: 
+                                    medium | thick | thin
+
+                                También existen propiedades que permiten definirlo por
+                                separado: 
+                                    border-[left | right | top | bottom]-width
+                            − border: 
+                                configuración completa de un borde. La sintaxis es
+                                la siguiente: 
+                                border-style border-color border-width
+                                También existen propiedades que permiten definirlo por
+                                separado: 
+                                    border-[left | right | top | bottom]
+                            − border-radius: 
+                                borde con esquinas redondeadas.
+                            − box-shadow: 
+                                borde con sombra   
+
+                        • Márgenes
+                            − margin: 
+                                márgenes interiores (los 4 márgenes). Admite de
+                                uno a 4 valores (uno por cada margen). 
+                                Los valores pueden ser numéricos o el valor auto.
+                                También existen propiedades que permiten definirlo por
+                                separado: 
+                                    margin-[left | right | top | bottom]
+                            • Márgenes interiores
+                                − padding: márgenes interiores (los 4 márgenes).
+                                También existen propiedades que permiten definirlo por
+                                separado: 
+                                    padding-[left | right | top | bottom]
+                            • Listas
+                                − list-style-image: 
+                                    imagen del marcador. 
+                                        Como valor puede contener el valor 
+                                            none 
+                                            o una URL con el formato url(‘x’)
+                                            donde x es la URL de la imagen.
+                                − list-style-position: 
+                                    posición del marcador. Posibles valores:
+                                        inside | outside
+                                - list-style-type: 
+                                    tipo de marcador. Puede ser uno de los
+                                    siguientes valores: 
+                                        none | circle | disc | square | decimal |
+                                        decimal-leading-zero | lower-alpha | upper-alpha | 
+                                        lowergreek | lower-latin | upper-latin | lower-roman | upper-roman
+                                        | armenian | georgian | hebrew(-) | cjk-ideographic | hiragana |
+                                        katakana | hiragana-iroha | katakanairoha
+                                - list-style: 
+                                    propiedad compuesta. 
+                                    Tiene la siguiente sintaxis:
+                                    list-style-image / list-style-position / list-style-type
+                            • Fondos
+                                − background-color: 
+                                    color de fondo.
+                                − background-image: 
+                                    imagen de fondo. Como valor puede
+                                    contener el valor none o una URL con el formato url(‘x’)
+                                    donde x es la URL de la imagen.
+                                − background-position: 
+                                    posición de la imagen de fondo.
+                                − background-repeat: 
+                                    repetición de la imagen de fondo.
+                                    Puede contener los siguientes valores: 
+                                        no-repeat | repeat |
+                                         repeat-x | repeat-y
+                                − background-origin: 
+                                    origen de la imagen de fondo. Puede
+                                    tener los siguientes valores: 
+                                    border-box | padding-box | content-box
+                                − background-clip: 
+                                    límite de la imagen de fondo.
+                                − background-size: 
+                                    tamaño de la imagen de fondo.
+                                − background: 
+                                    propiedad combinada. Tiene la siguiente
+                                    sintaxis: 
+                                        background-color / background-image / 
+                                        backgroundposition / background-repeat / 
+                                        background-origin backgroundclip / background-size
+
+                                        p. imagen {
+                                            background: url(“iceweasel.png”) no-repeat;
+                                            height: 128px;
+                                            width: 128px;
+                                        }
+                                        <p class=”imagen”>texto sobre imagen</p>
+                                • Tablas
+                                    − border-collapse: 
+                                        tipo de bordes. Valores permitidos:
+                                        collapse | separate
+                                    − border-spacing: 
+                                        separación entre celdas.
+                                    − caption-size 
+                                        posición de la leyenda de la tabla. Valores
+                                        permitidos: 
+                                        top | bottom | left | right
+                                    − empty-cells: 
+                                        borde en celdas vacías. Valores permitidos:
+                                        hide | show
+                                    − table-layout: 
+                                        tipo de distribución de la tabla. Valores
+                                        permitidos: 
+                                        auto | fixed
+
+                                            table {
+                                                border-collapse: collapse;
+                                                caption-side: top;
+                                            }
+                                            table td {
+                                                border; solid gray 1px;
+                                            }
+                                            <table>
+                                                <tr>
+                                                    <td>elemento 1</td>
+                                                    <td>elemento 2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>elemento 3</td>
+                                                    <td>elemento 4</td>
+                                                </tr>
+                                                <caption>leyenda</caption>
+                                            </table>
+
+                                • Tamaño de elementos
+                                    −width: 
+                                        anchura del elemento. Admite como valor un tamaño
+                                        customizado o el valor auto.
+                                    − min-width: 
+                                        anchura mínima del elemento.
+                                    − max-width: 
+                                        anchura máxima del elemento.
+                                    − height: 
+                                        altura del elemento. Admite como valor un tamaño
+                                        customizado o el valor auto.
+                                    − min-height: 
+                                        altura mínima del elemento.
+                                    − max-height: 
+                                        altura máxima del elemento.
+                                    − overflow:     
+                                        comportamiento si se desborda el elemento
+                                        debido a su contenido. 
+                                        Puede tener los siguientes valores:
+                                            auto | hidden | scroll | visible   
+
+                                • Posicionamiento de elementos
+                                        − float: 
+                                            modo de posicionamiento flotante. 
+                                            Indica sobre que elemento flota. 
+                                            Admite los siguientes valores: 
+                                                none | left | right
+                                        − clear: 
+                                            indica el lado del elemento en el que no puede haber
+                                            elementos flotantes. 
+                                            Puede tener los siguientes valores:
+                                                none | both | left | right
+                                        − position: 
+                                            tipo de posicionamiento del elemento. Admite los
+                                            siguientes valores: absolute | fixed | relative | static
+                                        − top: 
+                                            posición del borde superior del elemento. Admite una
+                                            distancia personalizada o el valor auto.
+                                        − right: 
+                                            posición del borde derecho del elemento. Admite una
+                                            distancia personalizada o el valor auto.
+                                        − bottom: 
+                                            posición del borde inferior del elemento. Admite
+                                            una distancia personalizada o el valor auto.
+                                        − left: 
+                                            posición del borde izquierdo del elemento. Admite una
+                                            distancia personalizada o el valor auto.
+                                        − z-index:
+                                            prioridad de visibilidad en elementos apilados
+                                            (eje z). Admite como valor un número entero que define su
+                                            prioridad o el valor auto.
+
+                                • Interfaz de usuario
+                                    − cursor:   
+                                        tipo de cursor. Admite una URL con el icono del
+                                            cursor url(‘x’) 
+                                            o los valores auto | crosshair | default | help |
+                                            move | pointer | progress | n-resize | ne-resize | e-resize | seresize | s-resize | sw-resize | w-resize | nw-resize | text | wait
+                                    − outline-color: 
+                                        color de los bordes. Mismos valores que color.
+                                    − outline-width:
+                                        anchura de los bordes. Mismos valores que
+                                        border-width
+                                    − outline-style: 
+                                        estilo de los bordes. Mismos valores que
+                                        borderstyle.
+                                    − outline: 
+                                        estilo combinado                                 
+                                • Otras características de CSS3
+                                        Con CSS3 también podemos realizar modificaciones de las
+                                        siguientes características:
+                                            • Color
+                                                − Colores HSL
+                                                − Colores HSLA
+                                                − Colores RGBA
+                                                −Opacidad (elementos translucidos)
+                                        • Degradado CSS3
+                                        −Degradados lineales
+                                        −Degradados lineales de repetición
+                                        −Degradados radiales de repetición
+                                        −Degradados radiales        
+
+                                            table {
+                                                border-collapse: collapse;
+                                                caption-side: top;
+                                                background: linear-gradient(to rigth, red, blue);
+                                            }
+                                            table td {
+                                                border; solid gray 1px;
+                                            }
+
+                                            <table>
+                                                <tr>
+                                                    <td>elemento 1</td>
+                                                    <td>elemento 2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>elemento 3</td>
+                                                    <td>elemento 4</td>
+                                                </tr>
+                                                    <caption>leyenda</caption>
+                                            </table>
+                                • Otros
+                                    − Media queries
+                                    − Múltiples columnas de texto
+                                    − Propiedades orientadas a discurso o lectura automática de
+                                        páginas web
+                                    − Animaciones CSS3
+        
+        Caso práctico "Creación de estilos CSS"
+            A copntinuación te proponemos un caso práctico 
+            relacioando con los tipos de CSS. 
+            Lee atentamente el enunciado del caso y desarrolla la solución correcta. 
+            Una vez consideres que has alcanzado la solución, 
+            puedes compartirla con tus compañeros en el foro.
+
+                Crea una página web que contenga la siguiente tabla:
+                Se deben respetar los estilos propuestos que deben declararse en
+                un fichero externo. Suponemos que el estilo se aplicará a todas las
+                tablas de la página.
+                Desarrolla primero el contenido y posteriormente aplica los estilos.
+        M3 - Prueba teórica
+            Test superado
+            Has obtenido un 100 en esta tarea   
+                
+                1. Para definir una imagen en HTML se emplea la etiqueta:
+                image
+                icon
+                bitmap
+                X img
+
+                2. Una lista desplegable se crea mediante la etiqueta:
+                <input type=list>
+                <input type=select>
+                X <select>
+                <select size=10>
+
+                3. ¿Qué indica el atributo action de un formulario?
+                X La dirección de envío de los datos
+                El método de envío de los datos
+                El número de datos a enviar
+                El evento que producirá el envío
+
+                4. La etiqueta link se utiliza para:
+                Incluir un enlace dentro de la página
+                X Referenciar a ficheros externos
+                Redirigir al usuario a otra página
+                Link no es una etiqueta, sino un atributo
+
+                5. Para poner texto en negrita con CSS:
+                text:bold
+                X font-weight:bold
+                Se usa la etiqueta <b>
+                style:bold    
+
+Módulo 4. Novedades HTML 5 y multimedia.
+    Componentes multimedia en HTML5
+        1. Componentes multimedia en HTML5
+            Además de los cambios que hemos visto anteriormente, se han añadido
+            a HTML5 elementos que permiten contenido multimedia sin necesidad de
+            plugins externos como Adobe Flash, Microsoft Silverlight o los Applets de Java.
